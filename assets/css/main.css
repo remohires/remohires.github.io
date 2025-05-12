@@ -697,7 +697,7 @@ section,
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent-color);
+  background: var(--secondary-color);
   left: 0;
   right: 0;
   bottom: 0;
@@ -967,7 +967,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about .about-meta {
-  color: var(--accent-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-bottom: 1rem;
   display: inline-block;
@@ -1010,7 +1010,7 @@ section,
 }
 
 .about .feature-list li i {
-  color: var(--accent-color);
+  color: var(--secondary-color);
   font-size: 1.25rem;
 }
 
@@ -1019,6 +1019,23 @@ section,
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.about .btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--contrast-color);
+  padding: 0.75rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.about .btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .about .profile .profile-name {
@@ -1104,7 +1121,7 @@ section,
   position: absolute;
   bottom: 5%;
   right: 5%;
-  background-color: var(--accent-color);
+  background: linear-gradient(92deg, #1441DF 0%, #00F7DF 100%);
   color: var(--contrast-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -1213,12 +1230,14 @@ section,
 }
 
 .features .nav-link:hover h4 {
-  color: var(--accent-color);
+  background: var(--Gradient, linear-gradient(92deg, #1441DF 0%, #00F7DF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .features .nav-link.active {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background: linear-gradient(92deg, #1441DF 0%, #00F7DF 100%);
 }
 
 .features .nav-link.active h4 {
